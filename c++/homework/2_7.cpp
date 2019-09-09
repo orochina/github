@@ -2,20 +2,21 @@
 #include <iostream>
 using namespace std ;
 //一直说有问题 但是不知道哪里有问题 哎 
+//最后明白了 是因为自己在设定函数时 吧display打成了dispaly 真是的 
 int main()
 {
-	void disPlay(int m_hour,int m_min);
-	int m_hour;
-	int m_min;
+	void disPlay(int hour,int min);
 	cout << "Enter thr number of hours: " ;
- 	cin >> m_hour;
+	int hour;
+ 	cin >> hour;
  	cout << "Enter the number of minutes: ";
- 	cin >> m_min;
- 	disPlay(m_hour,m_min);
+ 	int min;
+ 	cin >> min;
+ 	disPlay(hour,min);
 	return 0;
  } 
  
-void disPaly(int m_hour , int m_min)
+void disPlay(int hour , int min)
  {
- 	cout << "Time: " << m_hour << " : " << m_min ;
+ 	cout << "Time: " << hour << " : " << min ;
   }
