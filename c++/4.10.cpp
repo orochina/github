@@ -12,10 +12,13 @@ int main()
 	     << strlen(charr) << endl ;
 	cout << "length of string in str before input: "
 	     << str.size() << endl;
-	cout << "Enter a line of text:\n"";
-	cin.get(charr,20);                    //indicate maximum length
+	cout << "Enter a line of text:\n" ;
+	cin.getline(charr,20);                    //indicate maximum length
 	cout << "You entered: " << charr << endl;
 	cout << "Enter another line of text:\n";
-	get(cin,str);                         // cin now argument; no length specifier
-	cout << "You enter: " <<¡¡ 
+	getline(cin,str);                         // cin now argument; no length specifier
+	cout << "You enter: " << str << endl ;
+	cout << "You entered: " << str <<endl;
+	cout << "Length of string in charr after input: " <<strlen(charr) << endl ;
+	cout << "Length of string in str after input: " << str.size() << endl ; 
 }
